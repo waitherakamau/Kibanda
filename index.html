@@ -29,45 +29,18 @@
 
 <body>
 
-    <!-- <div class="gallery">
-        <img src="cabbage-removebg-preview.png" alt="">
-        <div class="desc">Cabbages</div>
-
-    </div>
-    <div class="gallery">
-        <img src="cabbage-removebg-preview.png" alt="">
-        <div class="desc">Cabbages</div>
-
-    </div>
-</div>
-<div class="gallery">
-    <img src="cabbage-removebg-preview.png" alt="">
-    <div class="desc">Cabbages</div>
-
-</div>
-<div class="gallery">
-    <img src="cabbage-removebg-preview.png" alt="">
-    <div class="desc">Cabbages</div>
-
-</div>
-<div class="gallery">
-    <img src="cabbage-removebg-preview.png" alt="">
-    <div class="desc">Cabbages</div>
-
-</div>
 
 
 
-
-     <!-- Navigation  -->
-     <nav class="navigation">
-         logo 
-         <a href="" class="logo">
+    <!-- Navigation  -->
+    <nav class="navigation">
+        logo
+        <a href="" class="logo">
             <span>e</span>Grocery
         </a>
         <!-- Menu -->
-        <ul class="menu"> 
-             <li><a href="#" class="active"> Home</a></li>
+        <ul class="menu">
+            <li><a href="#" class="active"> Home</a></li>
             <li><a href="#"> Categories</a></li>
             <li><a href="#"> Our packages</a></li>
             <li><a href="#"> Our App</a></li>
@@ -75,22 +48,23 @@
 
 
         </ul>
-         <!-- right-nav(cart-like)  -->
-         <div class="right - nav">
-            <like >
-            <a href="#" class="like"> 
-                 <i class="fa fa-heart" aria-hidden="true"></i> 
+        <!-- right-nav(cart-like)  -->
+        <div class="right - nav">
+            <like>
+                <a href="#" class="like">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
 
-            </a>
+                </a>
 
-            <!-- <cart > -->
-            <a href="#" class="cart"></a> 
-            <i class="fa-solid fa-cart-plus"></i> 
+                <!-- <cart > -->
+                <a href="#" class="cart"></a>
+                <i class="fa-solid fa-cart-plus"></i>
+                
 
-         </div> 
+        </div>
 
-    </nav> 
-     <!-- nav end  -->
+    </nav>
+    <!-- nav end  -->
     <!-- search banner  -->
     <section id="search-banner">
         <div class="search-banner-text">
@@ -103,26 +77,107 @@
                 <input type="text" class="search-input" placeholder="search your daily groceries" name="search"
                     required>
                 <!-- btn  -->
-                 <input type="submit" class="search-btn" value="seacrh"> 
+                <input type="submit" class="search-btn" value="seacrh">
 
             </form>
 
         </div>
-    </section> 
+    </section>
     <!-- !bg -->
     <img src="toma-removebg-preview.png" class="bg-1" alt="bg">
     <img src="food1-removebg-preview.png" class="bg-2" alt="bg2">
     <search-banner End>
 
-    <Category >
-    <section id="category">
-        <heading >
-        <div class="category-heading"> 
-            <h2>Category</h2>
-            <span>All</span>
-        </div> 
+        <Category>
+            <section id="category">
+                <heading>
+                    <div class="category-heading">
+                        <h2>Category</h2>
+                        <span>All</span>
+                    </div>
+                    <div class="full-img" id="fullImgBox">
+                        <img src="cabbage-removebg-preview.png" id="fullImg">
+                        <span onclick="closeFullImg()">X</span>
+                    </div>
+                    <!-- images -->
+                    <div class="img-gallery">
+                        <img src="cabbage-removebg-preview.png" onclick="openFullImg(this.src)">
+                        <img src="Kales-removebg-preview.png" onclick="openFullImg(this.src)">
+                        <img src="Broccoli-PNG-removebg-preview.png" onclick="openFullImg(this.src)">
+                        <img src="Greenspoon-Spinach-Mlango-Farm-1-removebg-preview.png" onclick="openFullImg(this.src)">
+                        <img src="tomatoes-removebg-preview.png" onclick="openFullImg(this.src)">
+                        <img src="carrot-removebg-preview.png" onclick="openFullImg(this.src)">
+                        <img src="Bananas-218094b-scaled-removebg-preview.png" onclick="openFullImg(this.src)">
+                        <img src="types-of-onions-aug052020-min-removebg-preview.png" onclick="openFullImg(this.src)">
 
-             <div class="gallery">
+                        <div class="image-slider">
+                            <div class="image-slider-track">
+                            <div class="slide">
+                                <img src="firu.jpg" width="150" height="150" >
+                                <img src="pat.jpg"  width="150" height="150">
+                                <img src="mama.jpg"  width="150" height="150">
+                                <img src="veg-removebg-preview.png" height="150" width="150" >
+                                <!-- <img src="https://www.istockphoto.com/photo/mother-and-daughter-grocery-shop-together-using-list-gm936496982-256202667?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fvegetables-in-a-trolly&utm_term=vegetables%20in%20a%20trolly%3A%3A%3A" width="150" height="150"> -->
+                                <img src="1.jpg" width="150" height="150">
+                                <img src="3.jpg" width="150" height="150">  
+                                <img src="2.jpg" width="150" height="150">
+
+                                <img src="firu.jpg" width="150" height="150" >
+                                <img src="pat.jpg"  width="150" height="150">
+                                <img src="mama.jpg"  width="150" height="150">
+                                <img src="veg-removebg-preview.png" height="150" width="150" >
+
+
+
+
+
+                            </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+                        <script>
+                            var fullImgBox = document.getElementById("fullImgBox");
+                            var fullImgBox = document.getElementById("fullImg");
+
+                            function openFullImg(pic){
+                                fullImgBox.style.display = "flex";
+                                fullImg.src = pic;
+                            }
+                            function closeFullImg(){
+                                fullImgBox.style.display = "none";
+
+
+                            }
+
+
+                        </script>
+                    </div>
+
+                    
+
+<!-- </html>
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Event Listener</h2>
+<h3>This event will show 'click' event of a button</h3>
+<button id="btn">Click Here!</button>
+<script>
+document.getElementById("btn").addEventListener("click", function() {
+document.write("<p>Hi this is the click event listener in JavaScript</p>");
+});
+</script>
+</body> -->
+
+
+<!-- <div class="gallery">
         <img src="cabbage-removebg-preview.png" alt="">
         <div class="desc">Cabbages</div>
 
@@ -153,63 +208,22 @@
     <div class="desc">Cabbages</div>
 
 </div>
-
-
-
-
-
-
-
-
-        <!-- box-container -->
-        <div class="category-container">
-            <!-- box  -->
-         <div class="category_box">
-                <!-- <img src="fisg-removebg-preview.png" alt="fish" width="10%">
-                <h5>Fish Meat</h5>
-                <span>Fish & Meat</span>   
-            </div> --> 
-
-            <!-- <div class="category_box5">
-                <img src="fisg-removebg-preview.png" alt="fish" width="10%">
-                <h5>Fish Meat</h5>
-                 <span>Fish & Meat</span>   
-            </div> -->
-
-            <!-- category ending -->
-
-
-            <!-- popular products -->
-           <!-- <section id="popular product">
-            <!-- heading -->
-            <!-- <div class="product-heading">
-                <h3>popular product</h3>
-                <span>All</span>
-
-            </div> -->
-            <!-- product-box -container -->
-            <!-- <div class="product-container">
-                <!-- box -->
-
-            <!-- </div>
-
-           </section> --> 
- 
-
-
-
-           
-
-
-
-        <!-- </div>
-    </section>  -->
-
-
-
-
-
-
 </body>
+<script src="script.js"></script>
+<body>
 
-</html>
+<script>
+    let rotation =0;
+    function rotateImg(){
+        rotation+=90; 
+        // add 90degrees i can change
+        if (rotation ===360){
+            // 360 rotate back to zero
+            rotation=0;
+
+        }
+        document.querySelector("#img").style.transform="rotate(90deg)";
+
+    }
+    
+</script></body> -->
